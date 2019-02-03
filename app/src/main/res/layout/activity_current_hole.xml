@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:deviceIds="wear"
+    android:id="@+id/activity_container">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/currentHole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hole 00"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/currentHoleScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Score: 00"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+
+        <TableRow
+            android:id="@+id/addSubtractTableRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/subtractBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_red_dark"
+                android:layout_marginRight="50dp"
+                android:minWidth="60dp"
+                android:minHeight="50dp"
+                android:text="@string/minus"
+                android:textColor="@color/white"
+                android:textSize="40dp" />
+
+            <Button
+                android:id="@+id/addBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="60dp"
+                android:minHeight="50dp"
+                android:background="@android:color/holo_green_dark"
+                android:text="@string/plus"
+                android:textColor="@color/white"
+                android:textSize="40dp" />
+
+        </TableRow>
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#2255FF"
+            android:text="@string/submit"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</android.support.wear.widget.BoxInsetLayout>
